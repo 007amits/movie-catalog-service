@@ -12,7 +12,7 @@ import com.amit.moviecatalogservice.models.CatalogItem;
 public class MovieCatalogResource {
   
   @RequestMapping("/{userId}")
-  public List<CatalogItem> getcatalog(@PathVariable("userId") String userId){
+  public List<CatalogItem> getCatalog(@PathVariable("userId") String userId){
     
     return Collections.singletonList(
         new CatalogItem("Transformers", "test", 4)
